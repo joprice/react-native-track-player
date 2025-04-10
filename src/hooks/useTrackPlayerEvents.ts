@@ -21,6 +21,7 @@ export const useTrackPlayerEvents = <
 
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
+    // @ts-ignore
     if (__DEV__) {
       const allowedTypes = Object.values(Event);
       const invalidTypes = events.filter(
